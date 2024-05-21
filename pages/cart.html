@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - The Ordinary</title>
+    <link rel="stylesheet" href="../style/styles.css"> <!-- Link to your CSS file -->
+    <script defer src="../js/script.js"></script> <!-- Link to your JS file -->
+    <style>
+        body {
+            font-family: 'Futura', sans-serif; /* Futura font */
+            background-color: black;
+            color: beige;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, footer {
+            background-color: #f5f5dc; /* Beige color */
+            color: black;
+            text-align: center;
+            padding: 1em;
+        }
+        .cart-section {
+            padding: 20px;
+            text-align: center;
+        }
+        .cart-item {
+            border: 1px solid beige;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #333;
+        }
+        .cart-item p {
+            margin: 5px 0;
+        }
+        .cart-buttons {
+            margin-top: 20px;
+        }
+        .cart-buttons button {
+            background-color: beige;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cart-buttons button:hover {
+            background-color: #e0e0d1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>The Ordinary</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="cart" class="cart-section">
+            <h2>Your Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div class="cart-buttons">
+                <button id="checkout-button">Proceed to Checkout</button>
+                <button id="clear-cart-button">Clear Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Ordinary. All rights reserved.</p>
+    </footer>
+</body>
+</html>

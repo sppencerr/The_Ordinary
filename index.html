@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ordinary</title>
+    <link rel="stylesheet" href="style/styles.css"> <!-- Link to your CSS file -->
+    <script defer src="js/script.js"></script> <!-- Link to your JS file -->
+</head>
+<body>
+    <header>
+        <div class="dark-gray-box">
+            <h1>The Ordinary</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="pages/cart.html">Cart</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <h2>Welcome to our store</h2>
+            <p>Your one-stop destination for premium makeup and skincare products.</p>
+        </section>
+
+        <section id="products" class="product-section">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <!-- Product 1 -->
+                <div class="product-item" id="product-1">
+                    <img src="product1.jpg" alt="Glycolic Acid 7% Exfoliating Toner">
+                    <h3>Glycolic Acid 7% Exfoliating Toner</h3>
+                    <select class="product-sizes">
+                        <option value="100ml">100ml</option>
+                        <option value="240ml">240ml</option>
+                    </select>
+                    <p class="product-price">8.70 USD</p>
+                    <p><strong>Targets:</strong> Textural Irregularities</p>
+                    <p><strong>Suited to:</strong> All Skin Types</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item" id="product-2">
+                    <img src="product2.jpg" alt="Caffeine Solution 5% + EGCG">
+                    <h3>Caffeine Solution 5% + EGCG</h3>
+                    <select class="product-sizes">
+                        <option value="30ml">30ml</option>
+                    </select>
+                    <p class="product-price">9.20 USD</p>
+                    <p><strong>Targets:</strong> Dark Circles</p>
+                    <p><strong>Suited to:</strong> All Skin Types</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item" id="product-3">
+                    <img src="product3.jpg" alt="Hyaluronic Acid 2% + B5">
+                    <h3>Hyaluronic Acid 2% + B5</h3>
+                    <select class="product-sizes">
+                        <option value="30ml">30ml</option>
+                        <option value="60ml">60ml</option>
+                        <option value="120ml">120ml</option>
+                    </select>
+                    <p class="product-price">9.90 USD</p>
+                    <p><strong>Targets:</strong> Dryness</p>
+                    <p><strong>Suited to:</strong> All Skin Types</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>We are passionate about bringing you the best makeup and skincare products to enhance your natural beauty.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Ordinary. All rights reserved.</p>
+    </footer>
+    
+
+</body>
+</html>

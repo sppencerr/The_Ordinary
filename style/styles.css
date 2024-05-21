@@ -1,0 +1,163 @@
+/* styles.css */
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura.woff2') format('woff2'),
+         url('fonts/Futura.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Futura', sans-serif; /* Futura font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative; /* Set header position to relative */
+    background-color: #f5f5dc; /* Beige color */
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Align items vertically */
+}
+
+nav {
+    display: flex; /* Use flexbox to align items */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Align items vertically */
+    margin-left: 20px; /* Add margin to create space between nav and logo */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to align items */
+}
+
+nav ul li {
+    margin: 0 10px; /* Adjust margin */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: black; /* Black background for nav items */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    position: relative; /* Set h1 position to relative */
+    font-size: 2em; /* Increase font size for The Ordinary */
+}
+
+.hero-section {
+    background: url('hero.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Dark gray box behind The Ordinary */
+.dark-gray-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333; /* Dark gray color */
+    padding: 10px 20px;
+    border-radius: 20px;
+    z-index: 1; /* Ensure it's above the beige header */
+}
+
+
+
+
+.product-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.product-item button {
+    background-color: #f5f5dc; /* Beige button color */
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: #e0e0d1;
+}
+
+.cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item {
+    border: 1px solid beige;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: beige;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+
+.about-section,
+.contact-section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
